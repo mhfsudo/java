@@ -3,18 +3,15 @@ package ch.mhf.math;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class MonteCarloAlgorithmusTest
+class MonteCarloAlgorithmTest
 {
     // test the calculated numbers(1000) against correct numbers with
     @Test
     void testPi5prozent()
     {
         // Arrange
-        int maxTestetNumbers = 1000;
-        MonteCarloAlgorithmus monteCarlos = new MonteCarloAlgorithmus();
-        double calculatedPi = monteCarlos.findPiMonteCarlos(maxTestetNumbers);
+        MonteCarloAlgorithm monteCarlosAlgorithmus = new MonteCarloAlgorithm();
+        double calculatedPi = monteCarlosAlgorithmus.monteCarlo();
         double originPi = Math.PI;
 
         // Act
