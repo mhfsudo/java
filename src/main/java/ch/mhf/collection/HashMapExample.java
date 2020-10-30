@@ -34,7 +34,7 @@ public class HashMapExample
 
         for (Map.Entry<String, Integer> i : personalien.entrySet())
         {
-            System.out.println(i);  //output Michael=30, Lisa=30
+            System.out.println(i);                              //output Michael=30, Lisa=30
         }
     }
 }
