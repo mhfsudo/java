@@ -17,24 +17,29 @@ public class HashMapExample
     public static void main(String[] args)
     {
         //Sammlung
-        HashMap<String, Integer> personalien = new HashMap<>(); //Instanz der Klasse HashMap
+        HashMap<String, Integer> personalien = new HashMap<>();     //Instanz der Klasse HashMap
         //put()
-        personalien.put("Michael", 30);                         //Schlüsselwertpaar Michael = Key | 30 = Value
+        personalien.put("Michael", 30);                             //Schlüsselwertpaar Michael = Key | 30 = Value
         personalien.put("Lisa", 30);
 
         for (String i : personalien.keySet())
         {
-            System.out.println(i);                              //output Michael, Lisa
+            System.out.println(i);                                  //output Michael, Lisa
         }
 
         for (Integer i : personalien.values())
         {
-            System.out.println(i);                              //output 30, 30
+            System.out.println(i);                                  //output 30, 30
         }
 
         for (Map.Entry<String, Integer> i : personalien.entrySet())
         {
-            System.out.println(i);                              //output Michael=30, Lisa=30
+            System.out.println(i);                                  //output Michael=30, Lisa=30
+        }
+
+        for (Map.Entry<String, Integer> i : personalien.entrySet())
+        {
+            System.out.println(i.getKey() + ": " + i.getValue());   //output Michael: 30, Lisa: 30
         }
     }
 }
