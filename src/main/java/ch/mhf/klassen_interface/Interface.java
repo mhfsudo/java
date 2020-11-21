@@ -1,4 +1,4 @@
-package ch.mhf.klassen;
+package ch.mhf.klassen_interface;
 
 /*
  *Data abstraction is the process of hiding certain details and showing

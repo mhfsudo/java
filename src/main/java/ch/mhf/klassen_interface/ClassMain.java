@@ -1,4 +1,4 @@
-package ch.mhf.klassen;
+package ch.mhf.klassen_interface;
 
 public class ClassMain
 {
