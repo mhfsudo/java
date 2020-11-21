@@ -8,7 +8,7 @@ package ch.mhf.klassen_interface;
 
 //Better Solution with Interface
 //SuperClass
-abstract class Animal
+abstract class AbstractAnimal
 {
     //Abstract method (without body)
     public abstract void animalSound();
@@ -20,7 +20,7 @@ abstract class Animal
 }
 
 //Subclass
-class Cow extends Animal
+class Cow extends AbstractAnimal
 {
     public void animalSound()
     {
@@ -29,7 +29,7 @@ class Cow extends Animal
 }
 
 //SubClass
-class Pig extends Animal
+class Pig extends AbstractAnimal
 {
     public void animalSound()
     {
