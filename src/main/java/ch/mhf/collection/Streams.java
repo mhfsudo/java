@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.*;
 
-public class Stream
+public class Streams
 {
     public static void main(String[] args)
     {

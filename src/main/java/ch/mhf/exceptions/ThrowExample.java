@@ -1,5 +1,9 @@
 package ch.mhf.exceptions;
 
+/*
+    throw new ExceptionTyp("Optional Text Message");
+ */
+
 public class ThrowExample
 {
     static void checkAge(int age)
@@ -7,7 +11,8 @@ public class ThrowExample
         if(age < 18)
         {
             throw new ArithmeticException("Access Denied");
-        } else
+        }
+        else
         {
             System.out.println("Access granted");
         }

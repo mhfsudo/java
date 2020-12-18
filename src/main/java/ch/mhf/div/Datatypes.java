@@ -10,15 +10,15 @@ public class Datatypes
         primitiveDataTypes.add("byte");
         primitiveDataTypes.add("short");
         primitiveDataTypes.add("int");
-        primitiveDataTypes.add("long");
-        primitiveDataTypes.add("float");
-        primitiveDataTypes.add("double");
+        primitiveDataTypes.add("long (15_000_000_000L)");
+        primitiveDataTypes.add("float (7.7f)");
+        primitiveDataTypes.add("double (666,666d)");
         primitiveDataTypes.add("boolean");
-        primitiveDataTypes.add("char");
+        primitiveDataTypes.add("char");                                     //a Char is surrounded by single Quote 'A'
 
         ArrayList<String> complexDataTypes = new ArrayList<String>();
         complexDataTypes.add("String");
-        complexDataTypes.add("Classes");
+        complexDataTypes.add("Objects");
 
         System.out.println("Primitive Datentypen");
         for (String i : primitiveDataTypes)

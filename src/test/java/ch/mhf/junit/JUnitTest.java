@@ -1,17 +1,22 @@
 package ch.mhf.junit;
 
-import ch.mhf.junit.JUnit;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class JUnitTest
 {
+    private JUnit test;
+
+    @BeforeEach
+    public void init()
+    {
+        test = new JUnit("Hello Test");
+    }
 
     @Test
-    void getName()
+    public void getName()
     {
-        JUnit test = new JUnit("Hello Test");
         assertEquals("Hello Test", test.getName());
     }
 }

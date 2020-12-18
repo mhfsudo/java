@@ -1,9 +1,10 @@
-package ch.mhf.div;
+package ch.mhf.collection;
 
 import java.util.ArrayList;
 
 /*
- * Parameterliste -> ausführbarer Code
+ * Parameterliste -> expression
+ *
  */
 
 public class Lambda
