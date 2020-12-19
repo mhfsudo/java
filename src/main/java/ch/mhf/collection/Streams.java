@@ -3,37 +3,33 @@ package ch.mhf.collection;
 /*
  * map
  * filter
+ * reduce
  * sorted
  */
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.*;
 
 public class Streams
 {
     public static void main(String[] args)
     {
-        List<Integer> number = Arrays.asList(1, 2, 3);
-        //Map
-        List<Integer> square = number.stream().map(x -> x*x).collect(Collectors.toList());
-        System.out.println(square);                                                                             //output [1, 4, 9]
-
+        List<Integer> numbers = Arrays.asList(1, 2, 3);
         List<String> names = Arrays.asList("Michael", "Lisa");
+
+        //Map
+        numbers.stream()
+                .map(x -> x * x)
+                .forEach(square -> System.out.println(square));     //output 1, 4, 9
+
         //Filter
-        List<String> result = names.stream().filter(s -> s.startsWith("L")).collect(Collectors.toList());
-        System.out.println(result);                                                                             //output [Lisa]
+        names.stream()
+                .filter(s -> s.startsWith("L"))
+                .forEach(name -> System.out.println(name));         //output Lisa
 
         //Sorted
-        List<String> show = names.stream().sorted().collect(Collectors.toList());
-        System.out.println(show);                                                                               //output [Lisa, Michael]
-
-        //Set
-        Set<Integer> squareSet = number.stream().map(x -> x * x).collect(Collectors.toSet());
-        System.out.println(squareSet);                                                                          //output [1, 4, 9]
-
-        //forEach
-        number.stream().map(x -> x * x).forEach(y -> System.out.println(y));                                    //output 1 4 9
+        names.stream()
+                .sorted()
+                .forEach(name -> System.out.println(name));         //output Lisa, Michael
     }
 }

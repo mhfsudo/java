@@ -15,6 +15,6 @@ public class Lambda
         stringList.add("A");
         stringList.add("B");
 
-        stringList.forEach((String i) -> System.out.println(i)); //output A B
+        stringList.forEach(element -> System.out.println(element)); //output A B
     }
 }
