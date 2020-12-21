@@ -17,8 +17,10 @@ public class ArraysExample
         System.out.println(stringArray.length);                 //return 3
         System.out.println(Arrays.toString(stringArray));       //output [Aston Martin, Tesla, Volvo]
 
-        int[] intArray = {1, 20, 30};
-        intArray[0] = 10;                                       //change 1 to 10
+        int[] intArray = new int[3];
+        intArray[0] = 10;
+        intArray[1] = 20;
+        intArray[2] = 30;
         System.out.println(intArray[1]);                        //output 20
         System.out.println(intArray.length);                    //output 3
         System.out.println(Arrays.toString(intArray));          //output [10, 20, 30]
@@ -36,6 +38,17 @@ public class ArraysExample
         }
 
         //Multidimensional Arrays
-        int[] [] multiArrayInt = {{1, 2, 3}, {4, 5, 6}};
+        int[][] multiArrayInt = {{1, 2, 3}, {4, 5, 6}};
+        System.out.println(multiArrayInt[0][0]);                //output 1
+        System.out.println(multiArrayInt[0][1]);                //output 2
+        System.out.println(multiArrayInt[1][0]);                //output 4
+
+        for (int i = 0; i < multiArrayInt.length; ++i)
+        {
+            for(int j = 0; j < multiArrayInt[i].length; ++j)
+            {
+                System.out.println(multiArrayInt[i][j]);        //output 1 2 3 4 5 6
+            }
+        }
     }
 }
