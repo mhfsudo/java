@@ -1,4 +1,4 @@
-package ch.mhf.klassen_interface;
+package ch.mhf.classes;
 
 /*
  * Example dynamic and static typ

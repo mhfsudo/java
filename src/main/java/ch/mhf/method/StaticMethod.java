@@ -1,6 +1,6 @@
-package ch.mhf.div;
+package ch.mhf.method;
 
-public class StaticMethodExample
+public class StaticMethod
 {
     static void myStaticMethod()
     {
@@ -14,11 +14,10 @@ public class StaticMethodExample
 
     public static void main(String[] args)
     {
-        myStaticMethod();                               //output I'm static
+        StaticMethod.myStaticMethod();                                      //output I'm static
 
         //we have to create an instance to call the nonStaticMethod
-
-        StaticMethodExample object = new StaticMethodExample();
-        object.myNonStaticMethod();                    //output I'm not static
+        StaticMethod object = new StaticMethod();
+        object.myNonStaticMethod();                                         //output I'm not static
     }
 }

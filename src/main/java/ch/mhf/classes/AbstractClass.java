@@ -1,9 +1,9 @@
-package ch.mhf.klassen_interface;
+package ch.mhf.classes;
 
 /*
- *Data abstraction is the process of hiding certain details and showing
- *only essential information to the user
- *Abstraction can be achieved with either abstract classes or interfaces
+    Data abstraction is the process of hiding certain details and showing
+    only essential information to the user
+    Abstraction can be achieved with either abstract classes or interfaces
  */
 
 //Better Solution with Interface
@@ -37,7 +37,7 @@ class Pig extends AbstractAnimal
     }
 }
 
-public class ClassAbstract
+public class AbstractClass
 {
     public static void main(String[] args)
     {

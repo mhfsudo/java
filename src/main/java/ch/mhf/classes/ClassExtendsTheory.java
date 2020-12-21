@@ -1,4 +1,4 @@
-package ch.mhf.klassen_interface;
+package ch.mhf.classes;
 
 /*
  * Fields und Methods der Superclass werden an die Subclass weitervererbt

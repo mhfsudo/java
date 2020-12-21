@@ -1,4 +1,4 @@
-package ch.mhf.div;
+package ch.mhf.method;
 
 public class MethodGetSetExample
 {

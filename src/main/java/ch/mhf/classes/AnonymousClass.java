@@ -1,4 +1,4 @@
-package ch.mhf.klassen_interface;
+package ch.mhf.classes;
 
 /*
     The following example, HelloWorldAnonymousClasses, uses anonymous classes in the initialization statements of the

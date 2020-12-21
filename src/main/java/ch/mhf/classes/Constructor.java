@@ -1,4 +1,4 @@
-package ch.mhf.klassen_interface;
+package ch.mhf.classes;
 
 /*
  *Der Konstruktor hat den gleichen Namen wie die Klasse
