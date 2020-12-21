@@ -13,8 +13,12 @@ interface Pet
 {
     //Interface method (don't have a body)
     public void animalSound();
-    //Interface method (don't have a body)
-    public void sleep();
+
+    //Interface default method (can have a body)
+    public default void sleep()
+    {
+        System.out.println("Zzz");
+    }
 }
 
 //Implements the Animal Interface
@@ -23,10 +27,6 @@ class Dog implements Pet
     public void animalSound()
     {
         System.out.println("Wuff");
-    }
-    public void sleep()
-    {
-        System.out.println("Zzz");
     }
 }
 
@@ -37,13 +37,9 @@ class Cat implements Pet
     {
         System.out.println("Miau");
     }
-    public void sleep()
-    {
-        System.out.println("Zzz");
-    }
 }
 
-public class Interface
+public class InterfaceExample
 {
     public static void main(String[] args)
     {

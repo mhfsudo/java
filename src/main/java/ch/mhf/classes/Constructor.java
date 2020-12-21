@@ -18,8 +18,8 @@ public class Constructor
     public static void main(String[] args)
     {
         //this will call the constructor
-        Constructor object1 = new Constructor("Hello");   //create object of the class
+        Constructor object1 = new Constructor("Hello");          //create object of the class
         Constructor object2 = new Constructor("World");
-        System.out.println(object1.str + " " + object2.str);                        //output Hello
+        System.out.println(object1.str + " " + object2.str);     //output Hello World
     }
 }

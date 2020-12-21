@@ -4,27 +4,92 @@ package ch.mhf.classes;
  * Fields und Methods der Superclass werden an die Subclass weitervererbt
  */
 
-class SuperClass1
+class SuperClass
 {
-    //Fields (No modifier)
-    String name;
+    //attribute
+    char attribute1 = 'a';
 
-    //Methods
-    public void doAction()
+    //constructor
+    public SuperClass()
     {
-        System.out.println(0);
+        System.out.println("A");
+    }
+
+    //method
+    public void doAction1()
+    {
+        System.out.println(1);
     }
 }
 
-public class ClassExtendsTheory extends SuperClass1
+class ClassExtendsTheory extends SuperClass
 {
+    //attribute
+    char attribute2 = 'b';
+
+    //constructor
+    public ClassExtendsTheory()
+    {
+        super();
+        System.out.println("B");
+    }
+
+    //method
+    public void doAction2()
+    {
+        System.out.println(2);
+    }
+
     public static void main(String[] args)
     {
-        ClassExtendsTheory myClass = new ClassExtendsTheory();
-        myClass.doAction();                 //output 0
+        SuperClass object1 = new SuperClass();                  //output A
+        ClassExtendsTheory object2 = new ClassExtendsTheory();  //output A B
+        SubClass object3 = new SubClass();                      //output A B C
 
-        myClass.name = "Michael";
-        System.out.println(myClass.name);   //output Michael
+        System.out.println("----------");
 
+        SuperClass object4 = new ClassExtendsTheory();          //output A B
+        SuperClass object5 = new SubClass();                    //output A B C
+        //ClassExtendsTheory object6 = new SuperClass();        //not possible
+        ClassExtendsTheory object7 = new SubClass();            //output A B C
+        //SubClass object8 = new ClassExtendsTheory();          //not possible
+        //SubClass object9 = new SuperClass();                  //not possible
+
+        System.out.println("----------");
+
+        System.out.println(object1.attribute1);                 //output a
+        System.out.println(object2.attribute1);                 //output a
+        System.out.println(object2.attribute2);                 //output b
+        System.out.println(object3.attribute1);                 //output a
+        System.out.println(object3.attribute2);                 //output b
+        System.out.println(object3.attribute3);                 //output c
+
+        System.out.println("----------");
+
+        object1.doAction1();                                    //output 1
+        object2.doAction1();                                    //output 1
+        object2.doAction2();                                    //output 2
+        object3.doAction1();                                    //output 1
+        object3.doAction2();                                    //output 2
+        object3.doAction3();                                    //output 3
+    }
+}
+
+class SubClass extends ClassExtendsTheory
+{
+    //attribute
+    char attribute3 = 'c';
+
+    //constructor
+    public SubClass()
+    {
+        super();
+        System.out.println("C");
+    }
+
+    //method
+    public void doAction3()
+    {
+        System.out.println(3);
     }
 }

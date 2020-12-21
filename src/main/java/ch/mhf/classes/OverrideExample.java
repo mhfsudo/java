@@ -1,13 +1,13 @@
 package ch.mhf.classes;
 
-class SuperClass
+class OverrideSuperClass
 {
     public int doAction()
     {
         return 0;
     }
 }
-public class OverrideExample extends SuperClass
+public class OverrideExample extends OverrideSuperClass
 {
     @Override
     public int doAction()
