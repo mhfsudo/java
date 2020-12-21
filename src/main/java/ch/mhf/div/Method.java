@@ -31,6 +31,6 @@ public class Method
         myMethod1();                                           //output Hello
         myMethod2("World",1);                                  //output Hello World1
         System.out.println(myMethod3());                       //output 5
-        System.out.println(myMethod4("World"));                //output Hello World
+        System.out.println(myMethod4("World"));      //output Hello World
     }
 }
