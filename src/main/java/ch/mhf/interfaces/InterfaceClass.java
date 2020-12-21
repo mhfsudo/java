@@ -11,7 +11,7 @@ package ch.mhf.interfaces;
 
 interface Interface1
 {
-    public int test = 1;
+    char MARK = '!';
 
     public void doAction1();
 }
@@ -32,13 +32,13 @@ public class InterfaceClass implements Interface1, Interface2
     @Override
     public void doAction2()
     {
-        System.out.println("World");
+        System.out.println("World" + MARK);
     }
 
     public static void main(String[] args)
     {
         InterfaceClass object = new InterfaceClass();
         object.doAction1();                             //output Hello
-        object.doAction2();                             //output World
+        object.doAction2();                             //output World!
     }
 }
