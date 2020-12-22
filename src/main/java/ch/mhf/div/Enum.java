@@ -2,7 +2,7 @@ package ch.mhf.div;
 
 public class Enum
 {
-    enum Anrede
+    enum Salutation
     {
         Frau,
         Herr,
@@ -11,7 +11,24 @@ public class Enum
 
     public static void main(String[] args)
     {
-        Anrede briefAnrede = Anrede.Frau;
-        System.out.println(briefAnrede + " Steinegger");	//Ooutput Frau Steinegger
+        Salutation letterSalutation = Salutation.Frau;
+
+        switch (letterSalutation)
+        {
+            case Frau:
+                System.out.println("Frau Steinegger");          //output Frau Steinegger
+                break;
+            case Herr:
+                System.out.println("Herr Steinegger");
+                break;
+            case Firma:
+                System.out.println("Firma Steinegger");
+                break;
+        }
+
+        for (Salutation currentValue : Salutation.values())
+        {
+            System.out.println(currentValue);                   //output Frau Herr Firma
+        }
     }
 }
