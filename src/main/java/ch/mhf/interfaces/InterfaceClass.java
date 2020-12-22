@@ -11,14 +11,17 @@ package ch.mhf.interfaces;
 
 interface Interface1
 {
+    //by default public static final
     char MARK = '!';
 
-    public void doAction1();
+    //by default public abstract
+    void doAction1();
 }
 
 interface Interface2
 {
-    public void doAction2();
+    //by default public abstract
+    void doAction2();
 }
 
 public class InterfaceClass implements Interface1, Interface2
