@@ -12,6 +12,8 @@ public class LinkedListExample
             LinkedList Index start with 0
             LinkedList Size is unlimited
             Elements in LinkedList are Objects, for primitive type you need to use Wrapper class
+
+            addFirst(), addLast(), removeFirst(), removeLast(), getFirst(), getLast()
          */
 
         LinkedList<String> stringList = new LinkedList<>();
