@@ -23,12 +23,12 @@ public class WrapperClass
         ArrayList<String> wrapperClassDataTypes = new ArrayList<String>();
         wrapperClassDataTypes.add("Byte");
         wrapperClassDataTypes.add("Short");
-        wrapperClassDataTypes.add("Int");
+        wrapperClassDataTypes.add("Integer");
         wrapperClassDataTypes.add("Long");
         wrapperClassDataTypes.add("Float");
         wrapperClassDataTypes.add("Double");
         wrapperClassDataTypes.add("Boolean");
-        wrapperClassDataTypes.add("Char");
+        wrapperClassDataTypes.add("Character");
 
         System.out.println("Primitive Datentypen");
         for (String i : primitiveDataTypes)
