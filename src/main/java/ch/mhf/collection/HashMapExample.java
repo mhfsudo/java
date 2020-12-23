@@ -1,12 +1,12 @@
 package ch.mhf.collection;
 
 /*
- * Methoden von HashMap
- * put()
- * get()
- * remove()
- * clear()
- * size()
+    Methoden von HashMap
+    put()
+    get()
+    remove()
+    clear()
+    size()
  */
 
 import java.util.HashMap;
@@ -17,29 +17,39 @@ public class HashMapExample
     public static void main(String[] args)
     {
         //Sammlung
-        HashMap<String, Integer> personalien = new HashMap<>();     //Instanz der Klasse HashMap
+        HashMap<String, Integer> personalien = new HashMap<>();                             //Instanz der Klasse HashMap
+
         //put()
-        personalien.put("Michael", 30);                             //Schlüsselwertpaar Michael = Key | 30 = Value
-        personalien.put("Lisa", 30);
+        personalien.put("Michael", 30);                                                     //Schlüsselwertpaar Michael = Key | 30 = Value
+        personalien.put("Lisa", 29);
 
-        for (String i : personalien.keySet())
+        //get()
+        personalien.get("Michael");                                                         //return 30
+
+        for (String currentElement : personalien.keySet())
         {
-            System.out.println(i);                                  //output Michael, Lisa
+            System.out.println(currentElement);                                             //output Michael, Lisa
         }
 
-        for (Integer i : personalien.values())
+        for (Integer currentElement : personalien.values())
         {
-            System.out.println(i);                                  //output 30, 30
+            System.out.println(currentElement);                                             //output 30, 29
         }
 
-        for (Map.Entry<String, Integer> i : personalien.entrySet())
+        for (Map.Entry<String, Integer> currentElement : personalien.entrySet())
         {
-            System.out.println(i);                                  //output Michael=30, Lisa=30
+            System.out.println(currentElement);                                             //output Michael=30, Lisa=29
         }
 
-        for (Map.Entry<String, Integer> i : personalien.entrySet())
+        for (Map.Entry<String, Integer> currentElement : personalien.entrySet())
         {
-            System.out.println(i.getKey() + ": " + i.getValue());   //output Michael: 30, Lisa: 30
+            System.out.println(currentElement.getKey() + ": " + currentElement.getValue()); //output Michael: 30, Lisa: 29
         }
+
+        //remove()
+        personalien.remove("Michael");
+
+        //clear()
+        personalien.clear();
     }
 }
