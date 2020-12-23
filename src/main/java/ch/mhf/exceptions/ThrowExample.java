@@ -20,6 +20,8 @@ public class ThrowExample
 
     public static void main(String[] args)
     {
-        checkAge(15);
+        checkAge(18);                                   //output Access granted
+        checkAge(15);                                   //throw exception with text Access Denied
+        checkAge(18);                                   //will not executed
     }
 }
