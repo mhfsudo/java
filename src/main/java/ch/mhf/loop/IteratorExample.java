@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /*
- *Allows to iterate over some Elements of an array
- *Also offers a methode remove() to remove Elements
+    Allows to iterate over some Elements of an array
+    Also offers a methode remove() to remove Elements
  */
 
 public class IteratorExample
@@ -16,13 +16,10 @@ public class IteratorExample
         stringList.add("A");
         stringList.add("B");
 
-        System.out.print("Content ");
         Iterator<String> itr = stringList.iterator();
-
         while (itr.hasNext())
         {
-            String element = itr.next();
-            System.out.print(element + " ");
+            System.out.print(itr.next() + " ");                       //output A B
         }
     }
 }
