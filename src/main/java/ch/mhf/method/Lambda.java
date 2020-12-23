@@ -1,10 +1,9 @@
-package ch.mhf.collection;
+package ch.mhf.method;
 
 import java.util.ArrayList;
 
 /*
- * Parameterliste -> expression
- *
+    Parameterliste -> expression
  */
 
 public class Lambda
