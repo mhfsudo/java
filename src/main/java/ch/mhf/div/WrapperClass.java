@@ -1,7 +1,9 @@
 package ch.mhf.div;
 
 /*
- *Wrapper classes provide a way to use primitive data types as objects
+    Wrapper classes provide a way to use primitive data types as objects
+
+    toString()
  */
 
 import java.util.ArrayList;
