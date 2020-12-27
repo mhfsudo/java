@@ -12,7 +12,7 @@ public class MethodGetSetTheory
     }
 
     //Getter Method
-    public String getMethodeName()
+    public String getMethodName()
     {
         return attribute;
     }
@@ -21,6 +21,6 @@ public class MethodGetSetTheory
     {
         MethodGetSetTheory object = new MethodGetSetTheory();
         object.setMethodName("Lisa");
-        System.out.println(object.getMethodeName());            //output Lisa
+        System.out.println(object.getMethodName());            //output Lisa
     }
 }
