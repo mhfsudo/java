@@ -22,13 +22,13 @@ class SuperClass
     }
 }
 
-class ClassExtendsTheory extends SuperClass
+class ExtendsClass extends SuperClass
 {
     //attribute
     char attribute2 = 'b';
 
     //constructor
-    public ClassExtendsTheory()
+    public ExtendsClass()
     {
         super();
         System.out.println("B");
@@ -43,15 +43,15 @@ class ClassExtendsTheory extends SuperClass
     public static void main(String[] args)
     {
         SuperClass object1 = new SuperClass();                  //output A
-        ClassExtendsTheory object2 = new ClassExtendsTheory();  //output A B
+        ExtendsClass object2 = new ExtendsClass();  //output A B
         SubClass object3 = new SubClass();                      //output A B C
 
         System.out.println("----------");
 
-        SuperClass object4 = new ClassExtendsTheory();          //output A B
+        SuperClass object4 = new ExtendsClass();          //output A B
         SuperClass object5 = new SubClass();                    //output A B C
         //ClassExtendsTheory object6 = new SuperClass();        //not possible
-        ClassExtendsTheory object7 = new SubClass();            //output A B C
+        ExtendsClass object7 = new SubClass();            //output A B C
         //SubClass object8 = new ClassExtendsTheory();          //not possible
         //SubClass object9 = new SuperClass();                  //not possible
 
@@ -75,7 +75,7 @@ class ClassExtendsTheory extends SuperClass
     }
 }
 
-class SubClass extends ClassExtendsTheory
+class SubClass extends ExtendsClass
 {
     //attribute
     char attribute3 = 'c';
