@@ -1,4 +1,4 @@
-package ch.mhf.classes;
+package ch.mhf.div;
 
 public class Attributes
 {
