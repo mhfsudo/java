@@ -1,14 +1,16 @@
 package ch.mhf.div;
 
 /**
- * @author Michael Friderich    //Klasse & Interface
- * @version 1.0                 //Klasse & Interface
- * @since						//Ueberall
+ * @author Michael Friderich        //Klasse & Interface
+ * @version 1.0                     //Klasse & Interface
+ * @since 1.0					    //Ueberall
  * @category CheatSheet
- * @param                       //Methoden & Konstruktoren
- * @throws                      //Methoden & Konstruktoren
- * @return                      //Methode
- * @see                         //Ueberall
+ * @param *name description         //Methoden & Konstruktoren
+ * @throws *exception description   //Methoden & Konstruktoren
+ * @return description              //Methode
+ * @see *reference                  //Ueberall
+ * @deprecated description          //Ueberall
+ * @inheritDoc                      //Kopiert Beschreibung aus der Override Method
  */
 
 public class Comment

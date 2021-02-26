@@ -1,4 +1,4 @@
-package ch.mhf.generics;
+package ch.mhf.generics.genericsClass.exampleEasy.exampleMedium;
 
 /*
     Wir definieren den Container Pair mit zwei formalen Typparametern T1 und T2,
@@ -18,6 +18,4 @@ public final class Pair<T1, T2>
 
     public final T1 getFirst() {return first;}
     public final T2 getSecond() {return second;}
-
-
 }
