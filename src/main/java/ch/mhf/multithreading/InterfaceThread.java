@@ -20,7 +20,11 @@ public class InterfaceThread implements Runnable
         System.out.println("Start " + name);
         try
         {
-            Thread.sleep(100);
+            for (int i = 0; i < 5; i++)
+            {
+                System.out.println(i);
+                Thread.sleep(1000);
+            }
         }catch (InterruptedException e)
         {
             //Flag erneut setzen und dadurch Abrruch ermöglichen
@@ -31,10 +35,10 @@ public class InterfaceThread implements Runnable
 
     public static void main(String[] args)
     {
-        Thread t1 = new Thread(new InterfaceThread("first thread"));
-        Thread t2 = new Thread(new InterfaceThread("second thread"));
+        Thread thread1 = new Thread(new InterfaceThread("first thread"));
+        Thread thread2 = new Thread(new InterfaceThread("second thread"));
 
-        t1.start();
-        t2.start();
+        thread1.start();
+        thread2.start();
     }
 }

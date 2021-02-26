@@ -20,7 +20,11 @@ public class ClassThread extends Thread
         System.out.println("Start " + name);
         try
         {
-            Thread.sleep(100);
+            for (int i = 0; i < 5; i++)
+            {
+                System.out.println(i);
+                Thread.sleep(1000);
+            }
         }catch (InterruptedException e)
         {
             //Flag erneut setzen und dadurch Abrruch ermöglichen
@@ -31,10 +35,10 @@ public class ClassThread extends Thread
 
     public static void main(String[] args)
     {
-        ClassThread t1 = new ClassThread("first thread");
-        ClassThread t2 = new ClassThread("second thread");
+        ClassThread thread1 = new ClassThread("first thread");
+        ClassThread thread2 = new ClassThread("second thread");
 
-        t1.start();
-        t2.start();
+        thread1.start();
+        thread2.start();
     }
 }
