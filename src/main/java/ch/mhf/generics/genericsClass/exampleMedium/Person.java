@@ -1,4 +1,4 @@
-package ch.mhf.generics.genericsClass.exampleEasy.exampleMedium;
+package ch.mhf.generics.genericsClass.exampleMedium;
 
 public class Person
 {

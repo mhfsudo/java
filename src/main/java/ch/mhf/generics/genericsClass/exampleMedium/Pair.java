@@ -1,4 +1,4 @@
-package ch.mhf.generics.genericsClass.exampleEasy.exampleMedium;
+package ch.mhf.generics.genericsClass.exampleMedium;
 
 /*
     Wir definieren den Container Pair mit zwei formalen Typparametern T1 und T2,
