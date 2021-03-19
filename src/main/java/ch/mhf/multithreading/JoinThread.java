@@ -1,6 +1,6 @@
 package ch.mhf.multithreading;
 
-public class ThreadJoin implements Runnable
+public class JoinThread implements Runnable
 {
 
     @Override
@@ -24,8 +24,8 @@ public class ThreadJoin implements Runnable
 
     public static void main(String[] args) throws InterruptedException
     {
-        Thread thread1 = new Thread(new ThreadJoin(), "first thread");
-        Thread thread2 = new Thread(new ThreadJoin(), "second thread");
+        Thread thread1 = new Thread(new JoinThread(), "first thread");
+        Thread thread2 = new Thread(new JoinThread(), "second thread");
 
         thread1.start();
         thread1.join();
