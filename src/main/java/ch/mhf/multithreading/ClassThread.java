@@ -6,18 +6,11 @@ package ch.mhf.multithreading;
 
 public class ClassThread extends Thread
 {
-    String name;
-
-    //Constructor
-    public ClassThread(String name)
-    {
-        this.name = name;
-    }
 
     @Override
     public void run()
     {
-        System.out.println("Start " + name);
+        System.out.println("Start " + Thread.currentThread().getName());
         try
         {
             for (int i = 0; i < 5; i++)
@@ -30,13 +23,15 @@ public class ClassThread extends Thread
             //Flag erneut setzen und dadurch Abrruch ermöglichen
             Thread.currentThread().interrupt();
         }
-        System.out.println("Stop " + name);
+        System.out.println("Stop " + Thread.currentThread().getName());
     }
 
     public static void main(String[] args)
     {
-        ClassThread thread1 = new ClassThread("first thread");
-        ClassThread thread2 = new ClassThread("second thread");
+        ClassThread thread1 = new ClassThread();
+        thread1.setName("first thread");
+        ClassThread thread2 = new ClassThread();
+        thread2.setName("second thread");
 
         thread1.start();
         thread2.start();
