@@ -1,0 +1,41 @@
+//NR 1 = ZAHL
+//NR 2 = TEILER
+//NR 3 = ZWISCHENERGEBNISSE
+//NR 5 = ERGEBNIS, 0 = NICHT PRIM, 1 = PRIM
+
+//Lade die zu ueberpruefende Zahl
+LOAD #1
+
+//IF ZAHL < 2 beende Programm
+SUB #1
+JZERO M2
+
+//IF ZAHL >= 2
+ADD #1
+STORE 1
+LOAD #2
+
+//FOR  (TEILER = 2; TEILER < ZAHL; TEILER++)
+M3: STORE 2
+//Teiler < Zahl
+LOAD 1
+SUB 2
+JZERO M1
+
+//Zahl % Teiler
+LOAD 1
+DIV 2
+MUL 2
+STORE 3
+LOAD 1
+SUB 3
+JZERO M2
+
+//Teiler++
+LOAD 2
+ADD #1
+GOTO M3
+
+M1: LOAD #1
+M2: STORE 5
+END
